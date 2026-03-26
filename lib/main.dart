@@ -539,9 +539,7 @@ class _InfoBox extends StatelessWidget {
 
   static const _items = [
     'Your profile and personal information',
-    'Order history and saved addresses',
-    'Saved payment methods',
-    'Loyalty points and rewards',
+    'All your app data',
     'All app preferences and settings',
   ];
 
