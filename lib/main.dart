@@ -670,27 +670,17 @@ class _TopBar extends StatelessWidget {
       child: Row(
         children: [
           Container(
-            width: 36, height: 36,
+            height: 36,
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             decoration: BoxDecoration(
               color: AppColors.primary,
               borderRadius: BorderRadius.circular(9),
             ),
-            alignment: Alignment.center,
-            child: Text('B',
-              style: GoogleFonts.syne(
-                fontWeight: FontWeight.w800,
-                fontSize: 16,
-                color: const Color(0xFF111113),
-              ),
-            ),
-          ),
-          const SizedBox(width: 10),
-          Text('BRGR',
-            style: GoogleFonts.syne(
-              fontWeight: FontWeight.w700,
-              fontSize: 18,
-              letterSpacing: 0.5,
-              color: AppColors.text,
+            child: Image.asset(
+              'assets/logo.png',
+              height: 28,
+              fit: BoxFit.contain,
+              color: const Color(0xFF111113),   // tint black to match dark logo
             ),
           ),
         ],
